@@ -98,7 +98,6 @@ header {
 
 .hero img {
     display: none;
-
 }
 
 .hero {
@@ -243,7 +242,8 @@ button {
         background-color 880ms ease
 }
 
-button:hover, button:active {
+button:hover,
+button:active {
     background: #71C0D4;
 }
 
@@ -251,8 +251,9 @@ button.secondary {
     background: var(--color-purple-600)
 }
 
-button.secondary:hover, button.secondary:active {
-background: #B18BDD;
+button.secondary:hover,
+button.secondary:active {
+    background: #B18BDD;
 }
 
 
@@ -341,7 +342,7 @@ button.secondary span {
 
 
         margin-bottom: var(--space-800);
-        
+
 
     }
 
@@ -402,28 +403,55 @@ button.secondary span {
 
 @media (min-width: 1024px) {
 
-        .img-grid {
+    .hero {
+
+        padding-top: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .block {
+        min-width: 600px;
+    }
+
+    .hero img {
+        display: inline-block;
+        max-height: 303px;
+    }
+
+    header {
+        margin-top: 80px;
+    }
+
+    #num-1 {
+        margin-top: 77px;
+    }
+
+    .img-grid {
 
         column-gap: var(--space-400);
 
     }
 
-#hero-img-holistic {
-    display: none;
-}
+    #hero-img-holistic {
+        display: none;
+    }
 
-.dark {
-    flex-direction: row;
-    justify-content: center;
-    gap: 95px;
-    padding:  112px 0px 119px 0px;
-    background-image: url("./assets/desktop/image-footer.jpg");
-}
+    .dark {
+        flex-direction: row;
+        justify-content: center;
+        gap: 95px;
+        padding: 112px 0px 119px 0px;
+        background-image: url("./assets/desktop/image-footer.jpg");
+    }
 
-.dark h2, .dark p {
-    max-width: 350px;
-    text-align: left;
-}
+    .dark h2,
+    .dark p {
+        max-width: 350px;
+        text-align: left;
+    }
 
     /* text-preset-1 */
     h1 {
