@@ -238,11 +238,23 @@ button {
     font-weight: 800;
     line-height: 150%;
     /* 24px */
+
+    transition:
+        background-color 880ms ease
+}
+
+button:hover, button:active {
+    background: #71C0D4;
 }
 
 button.secondary {
     background: var(--color-purple-600)
 }
+
+button.secondary:hover, button.secondary:active {
+background: #B18BDD;
+}
+
 
 button.primary span {
     color: var(--color-cyan-300);
